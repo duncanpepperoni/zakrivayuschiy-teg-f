@@ -100,7 +100,7 @@
 }
 
 .card__paragraph + .card__paragraph {
-  margin-block-start: 27px;
+  margin-block-start: 27px; /*27*/
 }
 
 /*------------------------------------------------------------------------------------------*/
@@ -289,7 +289,7 @@
   margin-inline: auto;
   margin-block: 50px 100px;
   padding: 15px 17px;
-  inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+  /*inline-size: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);*/
 }
 
 .button__save-content {
