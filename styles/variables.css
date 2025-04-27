@@ -20,7 +20,7 @@
   );
   --label-font-size: 14px;
 
-  --paragraf-line-height: 21px;
+  --paragraf-line-height: 117%;
   --header-and-h2-line-height: auto;
   --button-like-line-height: 90%;
   --floppy-line-height: 150%;
@@ -39,10 +39,5 @@
 @media (width > 375px) {
   :root {
     --inline-size: clamp(22.5rem, 15.018rem + 31.925vw, 43.75rem);
-  }
-}
-@media (width < 375px) {
-  :root {
-    --header-title-font-size: clamp(1.875rem, -17.125rem + 95vw, 3.0625rem);
   }
 }

@@ -14,7 +14,7 @@
 
 .inline-size {
   inline-size: var(--inline-size);
-  min-inline-size: 320px;
+  min-inline-size: 375px;
 }
 
 /*------------------------------------------------------------------------------------------*/
@@ -23,7 +23,7 @@
   margin-block: 100px;
   border: 2px solid #000;
   padding: var(--header-padding);
-  font-family: var(--secific-font-family, "PressStart2P"), sans-serif;
+  font-family: var(--secific-font-family, "PressStart2P"), fantasy;
   line-height: var(--header-and-h2-line-height, auto);
   text-align: center;
   text-transform: uppercase;
@@ -80,7 +80,7 @@
   z-index: 1;
   opacity: 0.5;
   color: #000;
-  font-family: var(--secific-font-family);
+  font-family: var(--secific-font-family, "PressStart2P"), fantasy;
   font-size: var(--label-font-size, 14px);
   line-height: var(--header-and-h2-line-height, auto);
   text-shadow: 0 0 1px #fff;
@@ -96,7 +96,7 @@
 
 .card__paragraph {
   padding: 0 25px;
-  line-height: var(--paragraf-line-height, 21px);
+  line-height: var(--paragraf-line-height, 117%);
 }
 
 .card__paragraph + .card__paragraph {
@@ -105,31 +105,31 @@
 
 /*------------------------------------------------------------------------------------------*/
 
-.filter_one {
+.filter_brightness_grayscale {
   filter: brightness(1) grayscale(0.8);
 }
 
-.filter_two {
+.filter_invert_saturate {
   filter: invert(0.8) saturate(130%);
 }
 
-.filter_three {
+.filter_opacity_hue-rotate {
   filter: opacity(0.5) hue-rotate(55deg);
 }
 
-.filter_four {
+.filter_invert_sepia {
   filter: invert(0.2) sepia(100%);
 }
 
-.filter_five {
+.filter_grayscale_blur {
   filter: grayscale(1.1) blur(0.2rem);
 }
 
-.filter_six {
+.filter_brightness_saturate {
   filter: brightness(2) saturate(300%);
 }
 
-.filter_seven {
+.filter_hue-rotate_brightness {
   filter: hue-rotate(180deg) brightness(2);
 }
 
@@ -148,7 +148,7 @@
 .button {
   position: relative;
   border: 2px solid #000;
-  font-family: var(--secific-font-family), sans-serif;
+  font-family: var(--secific-font-family, "PressStart2P"), fantasy;
   font-size: 14px;
   background-color: var(--page-background-color);
   transition: box-shadow 0.3s ease;
@@ -341,7 +341,7 @@
 
 .dialog__content-text {
   display: block;
-  font-family: var(--secific-font-family, "PressStart2P"), sans-serif;
+  font-family: var(--secific-font-family, "PressStart2P"), fantasy;
   font-size: 14px;
   line-height: 150%;
   text-transform: uppercase;
@@ -353,7 +353,7 @@
   inline-size: 100%;
 }
 
-@media (width > 1440px) {
+@media (width >= 1440px) {
   .card__title {
     padding: 3px 10px;
   }
@@ -369,11 +369,5 @@
   .button-save__content svg {
     inline-size: 21px;
     block-size: 21px;
-  }
-}
-
-@media (width < 375px) {
-  .button__save {
-    inline-size: min-content;
   }
 }
