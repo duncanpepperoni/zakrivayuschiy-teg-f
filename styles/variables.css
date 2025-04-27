@@ -1,1 +1,48 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font-family: "Inter-Variable";
+  --secific-font-family: "PressStart2P";
+
+  --page-background-color: #fff;
+  --page-background-image: repeating-linear-gradient(
+      to left,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+
+  --main-font-size: 18px;
+  --header-title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --header-paragraph-font-size: clamp(
+    0.875rem,
+    0.6769rem + 0.8451vw,
+    1.4375rem
+  );
+  --label-font-size: 14px;
+
+  --paragraf-line-height: 21px;
+  --header-and-h2-line-height: auto;
+  --button-like-line-height: 90%;
+  --floppy-line-height: 150%;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  --header-padding: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem) 0;
+  --inline-size: 100vw;
+
+  --heart-color: #ff0000;
+  --heart-contour: #000;
+  --heart-sparks: #ff0000;
+}
+
+@media (width > 375px) {
+  :root {
+    --inline-size: clamp(22.5rem, 15.018rem + 31.925vw, 43.75rem);
+  }
+}
+@media (width < 375px) {
+  :root {
+    --header-title-font-size: clamp(1.875rem, -17.125rem + 95vw, 3.0625rem);
+  }
+}
